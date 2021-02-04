@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Mdsystemweb Soluções Web
+ *
+ * NOTICE OF LICENSE
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to https://www.Mdsystemweb.com.br for more information.
+ *
+ * @category Mdsystemweb
+ * @package base
+ *
+ * @copyright Copyright (c) 2019 Mdsystemweb Soluções Web. (https://www.Mdsystemweb.com.br)
+ *
+ * @author Mdsystemweb Core Team <contato@Mdsystemweb.com.br>
+ * @author Diogo dos Santos Alves <diogo.alves@Mdsystemweb.com.br>
+ */
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="Mdsystemweb_validate_provider" xsi:type="object">Mdsystemweb\Taxvat\Model\ConfigProvider</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

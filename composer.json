@@ -1,0 +1,23 @@
+{
+    "name": "mdsystemweb/module-taxvat",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "contato@mdsystemweb.com.br",
+            "name": "Mdsystemweb"
+        }
+    ],
+    "minimum-stability": "dev",
+    "version": "1.0.4",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Mdsystemweb\\Taxvat\\": ""
+        }
+    }
+}
